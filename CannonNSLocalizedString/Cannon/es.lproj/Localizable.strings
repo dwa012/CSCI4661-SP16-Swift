@@ -1,0 +1,18 @@
+/* Formatted number of seconds remaining */
+"%.1f seconds" = "%.1f segundos";
+
+/* String for a simulated new game button */
+"Begin New Game" = "Comience Nuevo Juego";
+
+/* String displaying formatted elapsed time */
+"Elapsed Time: %.1f seconds" = "Tiempo transcurrido: %.1f segundos ";
+
+/* Text of the timeRemainingLabel */
+"Time remaining:" = "Tiempo restante:";
+
+/* String indicating that the user lost */
+"You Lose" = "Perdió";
+
+/* String indicating that the user won */
+"You Win!" = "¡Ganó!";
+

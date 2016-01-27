@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Welcome/Base.lproj/LaunchScreen.xib" source-language="en" target-language="es" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.0" build-num="6A313"/>
+    </header>
+    <body>
+      <trans-unit id="8ie-xW-0ye.text">
+        <source>  Copyright (c) 2014 Deitel and Associates, Inc. All rights reserved.</source>
+        <note>Class = "IBUILabel"; text = "  Copyright (c) 2014 Deitel and Associates, Inc. All rights reserved."; ObjectID = "8ie-xW-0ye";</note>
+      </trans-unit>
+      <trans-unit id="kId-c2-rCX.text">
+        <source>Welcome</source>
+        <note>Class = "IBUILabel"; text = "Welcome"; ObjectID = "kId-c2-rCX";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Welcome/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.0" build-num="6A313"/>
+    </header>
+    <body>
+      <trans-unit id="GCg-Ah-7Id.text">
+        <source>Welcome to iOS App Development!</source>
+        <target>¡Bienvenido al Desarrollo de App iOS!</target>
+        <note>Class = "IBUILabel"; text = "Welcome to iOS App Development!"; ObjectID = "GCg-Ah-7Id";</note>
+      </trans-unit>
+      <trans-unit id="waJ-nz-oow.accessibilityHint">
+        <source>Deitel double-thumbs-up bug logo</source>
+        <target>El logo de Deitel que tiene el insecto con dedos pulgares hacia arriba</target>
+        <note>Class = "IBUIImageView"; accessibilityHint = "Deitel double-thumbs-up bug logo"; ObjectID = "waJ-nz-oow";</note>
+      </trans-unit>
+      <trans-unit id="waJ-nz-oow.accessibilityLabel">
+        <source>Deitel logo</source>
+        <target>Logo de Deitel</target>
+        <note>Class = "IBUIImageView"; accessibilityLabel = "Deitel logo"; ObjectID = "waJ-nz-oow";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Welcome/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.0" build-num="6A313"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="WelcomeTests/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.0" build-num="6A313"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,9 @@
+/* Class = "IBUILabel"; text = "Welcome to iOS App Development!"; ObjectID = "GCg-Ah-7Id"; */
+"GCg-Ah-7Id.text" = "¡Bienvenido al Desarrollo de App iOS!";
+
+/* Class = "IBUIImageView"; accessibilityHint = "Deitel double-thumbs-up bug logo"; ObjectID = "waJ-nz-oow"; */
+"waJ-nz-oow.accessibilityHint" = "El logo de Deitel que tiene el insecto con dedos pulgares hacia arriba";
+
+/* Class = "IBUIImageView"; accessibilityLabel = "Deitel logo"; ObjectID = "waJ-nz-oow"; */
+"waJ-nz-oow.accessibilityLabel" = "Logo de Deitel";
+
