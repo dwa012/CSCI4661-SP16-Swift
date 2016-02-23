@@ -40,6 +40,7 @@
 		1DF2EFF019D0802E00F42F66 /* TwitterSearchesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitterSearchesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF2EFF519D0802E00F42F66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DF2EFF619D0802E00F42F66 /* TwitterSearchesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterSearchesTests.swift; sourceTree = "<group>"; };
+		917B8EB51C72A251000FC228 /* TwitterSearches.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = TwitterSearches.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,7 @@
 		1DF2EFDB19D0802E00F42F66 /* TwitterSearches */ = {
 			isa = PBXGroup;
 			children = (
+				917B8EB51C72A251000FC228 /* TwitterSearches.entitlements */,
 				1DF2EFDE19D0802E00F42F66 /* AppDelegate.swift */,
 				1DF2EFE019D0802E00F42F66 /* MasterViewController.swift */,
 				1DF2EFE219D0802E00F42F66 /* DetailViewController.swift */,
@@ -169,7 +171,7 @@
 				TargetAttributes = {
 					1DF2EFD819D0802E00F42F66 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = 2EW6YW5V2F;
+						DevelopmentTeam = 2L92EUB6UQ;
 						SystemCapabilities = {
 							com.apple.iCloud = {
 								enabled = 0;
@@ -355,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TwitterSearches/TwitterSearches.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TwitterSearches/Info.plist;
@@ -370,6 +373,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TwitterSearches/TwitterSearches.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_OPTIMIZATION_LEVEL = 0;

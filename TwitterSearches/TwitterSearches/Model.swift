@@ -107,8 +107,7 @@ let tempSearches = searches // hack to fix iOS 8.1.x bug
     @objc func updateSearches(notification: NSNotification) {
         if let userInfo = notification.userInfo {
             // check reason for change and update accordingly
-            if let reason = userInfo[
-                NSUbiquitousKeyValueStoreChangeReasonKey] as! NSNumber? {
+            if let reason = userInfo[NSUbiquitousKeyValueStoreChangeReasonKey] as! NSNumber? {
                     
                 // if changes occurred on another device
                 if reason.integerValue ==

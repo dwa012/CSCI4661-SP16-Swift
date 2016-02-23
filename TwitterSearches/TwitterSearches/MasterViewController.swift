@@ -10,7 +10,7 @@ class MasterViewController: UITableViewController,
     var detailViewController: DetailViewController? = nil
     
     var model: Model! = nil // manages the app's data
-    let twitterSearchURL = "http://mobile.twitter.com/search/?q="
+    let twitterSearchURL = "https://mobile.twitter.com/search/?q="
     
     // conform to ModelDelegate protocol; updates view when model changes
     func modelDataChanged() {
@@ -33,8 +33,7 @@ class MasterViewController: UITableViewController,
 
         // set up left and right UIBarButtonItems
         self.navigationItem.leftBarButtonItem = self.editButtonItem()
-        let addButton = UIBarButtonItem(barButtonSystemItem: .Add,
-            target: self, action: "addButtonPressed:")
+        let addButton = UIBarButtonItem(barButtonSystemItem: .Add, target: self, action: "addButtonPressed:")
         self.navigationItem.rightBarButtonItem = addButton
         
         if let split = self.splitViewController {
