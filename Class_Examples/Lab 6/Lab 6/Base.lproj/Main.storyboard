@@ -24,7 +24,7 @@
         <!--View Controller-->
         <scene sceneID="5cS-ks-Jgk">
             <objects>
-                <viewController id="L2V-UJ-zCk" sceneMemberID="viewController">
+                <viewController id="L2V-UJ-zCk" customClass="ViewController" customModule="Lab_6" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DSm-Ks-9vN"/>
                         <viewControllerLayoutGuide type="bottom" id="ecE-pd-SOQ"/>
