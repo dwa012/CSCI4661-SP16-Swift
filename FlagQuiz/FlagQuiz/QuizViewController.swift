@@ -64,7 +64,7 @@ class QuizViewController: UIViewController, ModelDelegate {
         }
         
         // place guesses on displayed UISegmentedControls
-        enabledCountries.shuffle() // use Array extension method
+        enabledCountries.shuffleInPlace() // use Array extension method
         var i = 0
     
         for segmentedControl in segmentedControls {
@@ -138,9 +138,12 @@ class QuizViewController: UIViewController, ModelDelegate {
                 displayQuizResults()
             } else { // use GCD to load next flag after 2 seconds
                 dispatch_after(
-                    dispatch_time(
-                        DISPATCH_TIME_NOW, Int64(2 * NSEC_PER_SEC)),
-                    dispatch_get_main_queue(), {self.nextQuestion()})
+                    dispatch_time(DISPATCH_TIME_NOW, Int64(2 * NSEC_PER_SEC)), // delay time
+                    dispatch_get_main_queue(), // which queue
+                    {
+                        self.nextQuestion()
+                    } // what to do
+                )
             }
         }
     }
@@ -194,16 +197,39 @@ class QuizViewController: UIViewController, ModelDelegate {
     }
 }
 
-// Array extension method for shuffling elements
-extension Array {
-    mutating func shuffle() {
-        // Modern Fisher-Yates shuffle: http://bit.ly/FisherYates
-        for first in (self.count - 1).stride(through: 1, by: -1) {
-            let second = Int(arc4random_uniform(UInt32(first + 1)))
-            swap(&self[first], &self[second])
+extension CollectionType {
+    /// Return a copy of `self` with its elements shuffled
+    func shuffle() -> [Generator.Element] {
+        var list = Array(self)
+        list.shuffleInPlace()
+        return list
+    }
+}
+
+extension MutableCollectionType where Index == Int {
+    /// Shuffle the elements of `self` in-place.
+    mutating func shuffleInPlace() {
+        // empty and single-element collections don't shuffle
+        if count < 2 { return }
+        
+        for i in 0..<count - 1 {
+            let j = Int(arc4random_uniform(UInt32(count - i))) + i
+            guard i != j else { continue }
+            swap(&self[i], &self[j])
         }
     }
 }
+
+// Array extension method for shuffling elements
+//extension Array {
+//    mutating func shuffle() {
+//        // Modern Fisher-Yates shuffle: http://bit.ly/FisherYates
+//        for first in (self.count - 1).stride(through: 1, by: -1) {
+//            let second = Int(arc4random_uniform(UInt32(first + 1)))
+//            swap(&self[first], &self[second])
+//        }
+//    }
+//}
 
 
 /*************************************************************************
