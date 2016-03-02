@@ -16,6 +16,7 @@
 		917B8EDA1C752A35000FC228 /* lab4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B8ED91C752A35000FC228 /* lab4Tests.swift */; };
 		917B8EE51C752A35000FC228 /* lab4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B8EE41C752A35000FC228 /* lab4UITests.swift */; };
 		917B8EF31C752D11000FC228 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 917B8EF21C752D11000FC228 /* Extensions.swift */; };
+		91A612CC1C7E6E490074540A /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A612CB1C7E6E490074540A /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		917B8EE41C752A35000FC228 /* lab4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lab4UITests.swift; sourceTree = "<group>"; };
 		917B8EE61C752A35000FC228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		917B8EF21C752D11000FC228 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		91A612CB1C7E6E490074540A /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				917B8EC41C752A35000FC228 /* MasterViewController.swift */,
 				917B8EC61C752A35000FC228 /* DetailViewController.swift */,
 				917B8EC81C752A35000FC228 /* Main.storyboard */,
+				91A612CB1C7E6E490074540A /* CustomCell.swift */,
 				917B8ECB1C752A35000FC228 /* Assets.xcassets */,
 				917B8ECD1C752A35000FC228 /* LaunchScreen.storyboard */,
 				917B8ED01C752A35000FC228 /* Info.plist */,
@@ -264,6 +267,7 @@
 			files = (
 				917B8EC71C752A35000FC228 /* DetailViewController.swift in Sources */,
 				917B8EC51C752A35000FC228 /* MasterViewController.swift in Sources */,
+				91A612CC1C7E6E490074540A /* CustomCell.swift in Sources */,
 				917B8EC31C752A35000FC228 /* AppDelegate.swift in Sources */,
 				917B8EF31C752D11000FC228 /* Extensions.swift in Sources */,
 			);
@@ -492,6 +496,7 @@
 				917B8EEB1C752A35000FC228 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		917B8EEC1C752A35000FC228 /* Build configuration list for PBXNativeTarget "lab4Tests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +505,7 @@
 				917B8EEE1C752A35000FC228 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		917B8EEF1C752A35000FC228 /* Build configuration list for PBXNativeTarget "lab4UITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +514,7 @@
 				917B8EF11C752A35000FC228 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
