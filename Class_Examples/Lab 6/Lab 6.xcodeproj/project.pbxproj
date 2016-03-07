@@ -14,6 +14,8 @@
 		91211DB51C87A2BE004489CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91211DB31C87A2BE004489CE /* LaunchScreen.storyboard */; };
 		91211DC01C87A2BE004489CE /* Lab_6Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91211DBF1C87A2BE004489CE /* Lab_6Tests.swift */; };
 		91211DCB1C87A2BE004489CE /* Lab_6UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91211DCA1C87A2BE004489CE /* Lab_6UITests.swift */; };
+		91211DD91C87A638004489CE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91211DD81C87A638004489CE /* Extensions.swift */; };
+		91211DDB1C87AC3B004489CE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91211DDA1C87AC3B004489CE /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		91211DC61C87A2BE004489CE /* Lab 6UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lab 6UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		91211DCA1C87A2BE004489CE /* Lab_6UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lab_6UITests.swift; sourceTree = "<group>"; };
 		91211DCC1C87A2BE004489CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91211DD81C87A638004489CE /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		91211DDA1C87AC3B004489CE /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,14 @@
 		91211DA91C87A2BE004489CE /* Lab 6 */ = {
 			isa = PBXGroup;
 			children = (
+				91211DD81C87A638004489CE /* Extensions.swift */,
 				91211DAA1C87A2BE004489CE /* AppDelegate.swift */,
 				91211DAC1C87A2BE004489CE /* ViewController.swift */,
 				91211DAE1C87A2BE004489CE /* Main.storyboard */,
 				91211DB11C87A2BE004489CE /* Assets.xcassets */,
 				91211DB31C87A2BE004489CE /* LaunchScreen.storyboard */,
 				91211DB61C87A2BE004489CE /* Info.plist */,
+				91211DDA1C87AC3B004489CE /* SettingsViewController.swift */,
 			);
 			path = "Lab 6";
 			sourceTree = "<group>";
@@ -257,7 +263,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91211DAD1C87A2BE004489CE /* ViewController.swift in Sources */,
+				91211DD91C87A638004489CE /* Extensions.swift in Sources */,
 				91211DAB1C87A2BE004489CE /* AppDelegate.swift in Sources */,
+				91211DDB1C87AC3B004489CE /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

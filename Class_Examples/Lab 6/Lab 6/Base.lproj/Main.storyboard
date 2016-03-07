@@ -32,13 +32,90 @@
                     <view key="view" contentMode="scaleToFill" id="pGa-JP-5M7">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Znw-FV-swz">
+                                <rect key="frame" x="180" y="105" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="7p0-mx-kc3"/>
+                                    <constraint firstAttribute="height" constant="128" id="IDa-DK-2rT"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ADG-Ae-gKq">
+                                <rect key="frame" x="271" y="285" width="59" height="30"/>
+                                <state key="normal" title="Stopped"/>
+                                <connections>
+                                    <action selector="startAnimation:" destination="L2V-UJ-zCk" eventType="touchUpInside" id="RnQ-2A-ZV8"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ADG-Ae-gKq" firstAttribute="centerX" secondItem="Znw-FV-swz" secondAttribute="centerX" id="3Kv-M3-Xlq"/>
+                            <constraint firstItem="ADG-Ae-gKq" firstAttribute="top" secondItem="Znw-FV-swz" secondAttribute="bottom" constant="52" id="3ao-kV-GjY"/>
+                            <constraint firstItem="Znw-FV-swz" firstAttribute="centerX" secondItem="pGa-JP-5M7" secondAttribute="centerX" id="RM2-eI-Xgh"/>
+                            <constraint firstItem="Znw-FV-swz" firstAttribute="top" secondItem="DSm-Ks-9vN" secondAttribute="bottom" constant="41" id="g4L-ac-Qmi"/>
+                            <constraint firstItem="ADG-Ae-gKq" firstAttribute="centerY" secondItem="pGa-JP-5M7" secondAttribute="centerY" id="gyt-Iy-vVF"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Kfl-qs-ekM"/>
+                    <navigationItem key="navigationItem" id="Kfl-qs-ekM">
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="XYe-KX-0mC">
+                            <connections>
+                                <segue destination="ANH-yV-I3d" kind="show" id="fXN-9u-3gE"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="button" destination="ADG-Ae-gKq" id="as2-XR-0Oa"/>
+                        <outlet property="colorView" destination="Znw-FV-swz" id="bhc-BR-GGf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tXO-lf-Ddz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="652" y="348"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="fKD-8m-Mv5">
+            <objects>
+                <viewController id="ANH-yV-I3d" customClass="SettingsViewController" customModule="Lab_6" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="F2d-18-OA7"/>
+                        <viewControllerLayoutGuide type="bottom" id="hVV-Og-keL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lb7-6D-moK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Speed in seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rlZ-3s-KJr">
+                                <rect key="frame" x="232" y="82" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gc5-EX-Wdj">
+                                <rect key="frame" x="252" y="121" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="AKL-GD-z3b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gc5-EX-Wdj" firstAttribute="centerX" secondItem="lb7-6D-moK" secondAttribute="centerX" id="Hkc-KM-bHG"/>
+                            <constraint firstItem="rlZ-3s-KJr" firstAttribute="centerX" secondItem="gc5-EX-Wdj" secondAttribute="centerX" id="aOC-RR-dib"/>
+                            <constraint firstItem="gc5-EX-Wdj" firstAttribute="top" secondItem="rlZ-3s-KJr" secondAttribute="bottom" constant="18" id="tby-cB-V8Z"/>
+                            <constraint firstItem="rlZ-3s-KJr" firstAttribute="top" secondItem="F2d-18-OA7" secondAttribute="bottom" constant="18" id="w0s-Pq-ISC"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="speedTextField" destination="gc5-EX-Wdj" id="Tbm-6J-rNB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jDc-am-Fms" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453" y="348"/>
         </scene>
     </scenes>
 </document>
