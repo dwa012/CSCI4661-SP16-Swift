@@ -21,14 +21,14 @@ class Blocker : SKSpriteNode {
         self.blockerSize = blockerSize
         super.init(
             texture: SKTexture(imageNamed: "blocker"),
-            color: nil,
+            color: UIColor.clearColor(),
             size: CGSizeMake(sceneSize.width * blockerWidthPercent,
                 sceneSize.height * blockerHeightPercent *
                     blockerSize.rawValue))
         
         // set up the blocker's physicsBody
         self.physicsBody =
-            SKPhysicsBody(texture: self.texture, size: self.size)
+            SKPhysicsBody(texture: self.texture!, size: self.size)
         self.physicsBody?.friction = 0.0
         self.physicsBody?.restitution = 1.0
         self.physicsBody?.linearDamping = 0.0

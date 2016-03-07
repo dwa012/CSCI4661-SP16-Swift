@@ -43,14 +43,14 @@ class Target : SKSpriteNode {
         // call SKSpriteNode designated initializer
         super.init(
             texture: SKTexture(imageNamed: targetColor.rawValue),
-            color: nil,
+            color: UIColor.clearColor(),
             size: CGSizeMake(sceneSize.width * targetWidthPercent,
                 sceneSize.height * targetHeightPercent *
                     targetSize.rawValue))
         
         // set up the target's physicsBody
         self.physicsBody =
-            SKPhysicsBody(texture: self.texture, size: self.size)
+            SKPhysicsBody(texture: self.texture!, size: self.size)
         self.physicsBody?.friction = 0.0
         self.physicsBody?.restitution = 1.0
         self.physicsBody?.linearDamping = 0.0
