@@ -238,9 +238,13 @@ class MasterViewController: UITableViewController,
         let firstNameSortDescriptor = NSSortDescriptor(key: "firstname",
             ascending: true, selector: "caseInsensitiveCompare:")
         
+
+//        fetchRequest.predicate = NSPredicate(format: "lastname == %@", "Smith")
+        
         fetchRequest.sortDescriptors =
             [lastNameSortDescriptor, firstNameSortDescriptor]
-        
+
+
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
         let aFetchedResultsController = NSFetchedResultsController(
@@ -272,6 +276,7 @@ class MasterViewController: UITableViewController,
         didChangeSection sectionInfo: NSFetchedResultsSectionInfo,
         atIndex sectionIndex: Int,
         forChangeType type: NSFetchedResultsChangeType) {
+
         switch type {
         case .Insert:
             self.tableView.insertSections(NSIndexSet(index: sectionIndex),

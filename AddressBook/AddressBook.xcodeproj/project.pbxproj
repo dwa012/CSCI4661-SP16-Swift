@@ -46,6 +46,7 @@
 		1DBCF18E1A18F7D50034DFD6 /* AddressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DBCF1931A18F7D50034DFD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DBCF1941A18F7D50034DFD6 /* AddressBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressBookTests.swift; sourceTree = "<group>"; };
+		910A25421CB32C300057C4BC /* v2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = v2.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -465,9 +466,10 @@
 		1DBCF17B1A18F7D50034DFD6 /* AddressBook.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				910A25421CB32C300057C4BC /* v2.xcdatamodel */,
 				1DBCF17C1A18F7D50034DFD6 /* AddressBook.xcdatamodel */,
 			);
-			currentVersion = 1DBCF17C1A18F7D50034DFD6 /* AddressBook.xcdatamodel */;
+			currentVersion = 910A25421CB32C300057C4BC /* v2.xcdatamodel */;
 			path = AddressBook.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
