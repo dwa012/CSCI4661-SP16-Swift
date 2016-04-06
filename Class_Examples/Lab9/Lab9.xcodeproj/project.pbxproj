@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		91E2EB9A1CB5B1DE00047732 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2EB991CB5B1DE00047732 /* AppDelegate.swift */; };
-		91E2EB9C1CB5B1DE00047732 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2EB9B1CB5B1DE00047732 /* ViewController.swift */; };
 		91E2EB9F1CB5B1DE00047732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E2EB9D1CB5B1DE00047732 /* Main.storyboard */; };
 		91E2EBA21CB5B1DE00047732 /* Lab9.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91E2EBA01CB5B1DE00047732 /* Lab9.xcdatamodeld */; };
 		91E2EBA41CB5B1DE00047732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E2EBA31CB5B1DE00047732 /* Assets.xcassets */; };
@@ -42,7 +41,6 @@
 		8D9934D56B69217B860EE478 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		91E2EB961CB5B1DE00047732 /* Lab9.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lab9.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91E2EB991CB5B1DE00047732 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		91E2EB9B1CB5B1DE00047732 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		91E2EB9E1CB5B1DE00047732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		91E2EBA11CB5B1DE00047732 /* Lab9.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lab9.xcdatamodel; sourceTree = "<group>"; };
 		91E2EBA31CB5B1DE00047732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -109,7 +107,6 @@
 			isa = PBXGroup;
 			children = (
 				91E2EB991CB5B1DE00047732 /* AppDelegate.swift */,
-				91E2EB9B1CB5B1DE00047732 /* ViewController.swift */,
 				91E2EB9D1CB5B1DE00047732 /* Main.storyboard */,
 				91E2EBA31CB5B1DE00047732 /* Assets.xcassets */,
 				91E2EBA51CB5B1DE00047732 /* LaunchScreen.storyboard */,
@@ -337,7 +334,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91E2EB9C1CB5B1DE00047732 /* ViewController.swift in Sources */,
 				91E2EB9A1CB5B1DE00047732 /* AppDelegate.swift in Sources */,
 				91E2EBA21CB5B1DE00047732 /* Lab9.xcdatamodeld in Sources */,
 				91E2EBCB1CB5B4F100047732 /* TableViewController.swift in Sources */,

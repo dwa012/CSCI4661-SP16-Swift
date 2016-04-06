@@ -90,7 +90,7 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
  
     // MARK: Helpers
     
-    // called by line 174 to configure a cell
+    
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let contact = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Post
         cell.textLabel!.text = contact.lastname
@@ -132,7 +132,7 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
         let fetchRequest = NSFetchRequest()
         
         // edited to use the Contact entity
-        let entity = NSEntityDescription.entityForName("Contact",
+        let entity = NSEntityDescription.entityForName("Post",
                                                        inManagedObjectContext: self.managedObjectContext)
         fetchRequest.entity = entity
         
