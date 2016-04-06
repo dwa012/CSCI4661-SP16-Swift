@@ -9,16 +9,23 @@
 import UIKit
 import CoreData
 import Alamofire
+import SwiftyJSON
 
 class TableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
 
     lazy var managedObjectContext: NSManagedObjectContext = {
-        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        return appDelegate.managedObjectContext
+        return self.appDelegate.managedObjectContext
     }()
+    
+    lazy var appDelegate: AppDelegate = {
+        return UIApplication.sharedApplication().delegate as! AppDelegate
+    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        fetchAndInsertItems()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -92,9 +99,9 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
     
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        let contact = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Post
-        cell.textLabel!.text = contact.lastname
-        cell.detailTextLabel!.text = contact.firstname
+        let post = self.fetchedResultsController.objectAtIndexPath(indexPath) as! Post
+        cell.textLabel!.text = post.title
+        cell.detailTextLabel!.text = post.body
     }
     
     // indicate that an error occurred when saving database changes
@@ -117,6 +124,20 @@ class TableViewController: UITableViewController, NSFetchedResultsControllerDele
     
     func fetchAndInsertItems() {
         // TODO 
+    }
+    
+    func getPost(postId: Int, context: NSManagedObjectContext) -> [Post] {
+        let fetchRequest = NSFetchRequest(entityName: "Post")
+        
+        fetchRequest.predicate = NSPredicate(format: "id == %i", postId)
+        
+        if let results = try? context.executeFetchRequest(fetchRequest) as! [Post] {
+            return results
+        } else {
+            print("There was an error getting the results")
+        }
+        
+        return []
     }
 
  
