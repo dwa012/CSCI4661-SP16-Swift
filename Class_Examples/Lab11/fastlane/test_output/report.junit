@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuites tests='2' failures='0'>
+  <testsuite name='Lab11Tests.ContactTest' tests='1' failures='0'>
+    <testcase classname='Lab11Tests.ContactTest' name='testSave' time='0.010'/>
+  </testsuite>
+  <testsuite name='Lab11UITests.Lab11UITests' tests='1' failures='0'>
+    <testcase classname='Lab11UITests.Lab11UITests' name='testExample' time='3.460'/>
+  </testsuite>
+</testsuites>
